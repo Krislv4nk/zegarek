@@ -1,0 +1,13 @@
+
+@media screen and (min-width: 700px) {
+    .watch {
+        border-radius: 30px;
+        border: 2px solid #ffffff;
+    padding: 30px;
+    font-size: 68px;
+    margin-top: 400px;
+    color: #ffffff; /* Text color */
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff,
+     0 0 30px #ffffff, 0 0 40px #ffffff;
+    }
+}

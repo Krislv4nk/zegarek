@@ -8,14 +8,14 @@ import ErrorPage from 'pages/ErrorPage/ErrorPage';
 
 function App() {
   return (
-    <div>
+    
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route path="/first" element={<FirstPage />} />
           </Route>
           <Route path="*" element={<ErrorPage />} />
       </Routes>
-    </div>
+  
   );
 }
 export default App;
