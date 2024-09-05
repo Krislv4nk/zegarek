@@ -1,0 +1,10 @@
+@media screen and (min-width: 780px) {
+.container {
+    margin: 0 auto;
+    width: 1280px;
+    height: 800px;
+     padding: 0 50px;
+    position: relative;
+    z-index: 10;
+}
+}
