@@ -47,7 +47,7 @@ const FirstPage = () => {
 
   return (
     <div className={css.wrapper}>
-      <h2 className={css.header}>Nigdy martw się dzisiejszymi problemami, jutro będą nowe</h2>
+      <h2 className={css.header}>Nigdy nie martw się dzisiejszymi problemami, jutro będą nowe</h2>
       {/* <img className={css.drewnex} src={drewnex} alt="myPhoto" /> */}
       <CustomClock />
       <p className={css.created}>Created by Krislv4nk</p>
