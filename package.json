@@ -23,7 +23,9 @@
     "react-dom": "^18.2.0",
     "react-live-clock": "^6.1.23-beta",
     "react-router-dom": "^6.15.0",
+    "react-slick": "^0.30.2",
     "react-tsparticles": "^2.12.2",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^6.0.7",
     "vite-plugin-svgr": "^3.2.0"
   },
