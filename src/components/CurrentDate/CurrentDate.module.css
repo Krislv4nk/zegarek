@@ -1,11 +1,10 @@
-
 @media screen and (min-width: 700px) {
-    .watch {
+    .currentDate {
+        font-size: 35px;
         border-radius: 30px;
         border: 2px solid #ffffff;
-    padding: 30px;
-    font-size: 98px;
-    margin-top: 50px;
+        margin-top: 50px;
+        padding: 30px;
     color: #ffffff; /* Text color */
     box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff,
      0 0 30px #ffffff, 0 0 40px #ffffff;

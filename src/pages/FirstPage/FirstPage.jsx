@@ -1,7 +1,11 @@
 import { useEffect } from 'react';
 import CustomClock from './../../components/MyDigitalClock/MyDigitalClock';
 import css from './FirstPage.module.css';
+import CurrentDate from './../../components/CurrentDate/CurrentDate';
 // import drewnex from './../../helpers/drewnex.jpg';
+
+
+
 
 const FirstPage = () => {
 
@@ -49,6 +53,7 @@ const FirstPage = () => {
     <div className={css.wrapper}>
       <h2 className={css.header}>Nigdy nie martw się dzisiejszymi problemami, jutro będą nowe, kurwą</h2>
       {/* <img className={css.drewnex} src={drewnex} alt="myPhoto" /> */}
+      <CurrentDate/>
       <CustomClock />
       <p className={css.created}>Created by Krislv4nk</p>
     </div>
