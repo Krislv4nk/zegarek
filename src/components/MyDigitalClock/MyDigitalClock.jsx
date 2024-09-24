@@ -13,7 +13,7 @@ const CustomClock = () => {
 
   return (
     <div className={css.watch}>
-      {time.toLocaleTimeString()}
+      {time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
     </div>
   );
 };
