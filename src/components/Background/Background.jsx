@@ -16,7 +16,7 @@ export const Background = () => {
 
   const options = useMemo(
     () => ({
-     fpsLimit: 60,
+     fpsLimit: 20,
       interactivity: {
        
         modes: {
@@ -39,42 +39,47 @@ export const Background = () => {
             sync: true,
           }
         },
-         links: {
-          color: "#ffffff",
-          distance: 250,
-          enable: true,
-          opacity: 0.5,
-          width: 3,
+        stroke: {
+        width: 2, 
+        color: {
+          value: "#00baff",
+          animation: {
+            enable: true,
+            speed: 10,
+            sync: true,
+          }
         },
+      },
+        
         move: {
-          direction: "top",
+          direction: "none",
           enable: true,
           outModes: {
             default: "out",
           },
           random: false,
-          speed: 3,
+          speed: 0.5,
           straight: false,
         },
         number: {
           density: {
             enable: true,
           },
-          value: 60,
+          value: 30,
         },
         opacity: {
-          value: { min: 0.1, max: 2 }, 
-          animation: {
-            enable: true,
-            speed: 10, 
-            sync: false, 
-          },
+          value: { min: 0.1, max: 0.2 }, 
+          // animation: {
+          //   enable: true,
+          //   speed: 10, 
+          //   sync: false, 
+          // },
         },
         shape: {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 20 },
+          value: { min: 10, max: 50 },
           
         },
         shadow: {
@@ -96,16 +101,11 @@ export const Background = () => {
     return null;
   } 
     return (
-  
       <Particles 
         id="tsparticles"
         init={initParticlesEngine}
         options={options}
-       
       />
-  
     );
-
-
-  
 };
+
