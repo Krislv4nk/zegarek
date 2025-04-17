@@ -14,18 +14,18 @@ export const Background = () => {
     });
   }, []);
 
-  const options = useMemo(
+ const options = useMemo(
     () => ({
-     fpsLimit: 20,
+     fpsLimit: 40,
       interactivity: {
        
         modes: {
           push: {
-            quantity: 4,
+            quantity: 8,
           },
           repulse: {
             distance: 200,
-            duration: 0.4,
+            duration: 0.1,
           },
         },
       },
@@ -58,17 +58,17 @@ export const Background = () => {
             default: "out",
           },
           random: false,
-          speed: 0.5,
+          speed: 0.2,
           straight: false,
         },
         number: {
           density: {
             enable: true,
           },
-          value: 30,
+          value: 50,
         },
         opacity: {
-          value: { min: 0.1, max: 0.2 }, 
+          value: { min: 0.5, max: 0.9 }, 
           // animation: {
           //   enable: true,
           //   speed: 10, 
@@ -79,7 +79,7 @@ export const Background = () => {
           type: "circle",
         },
         size: {
-          value: { min: 10, max: 50 },
+          value: { min: 1, max: 5 },
           
         },
         shadow: {
@@ -93,9 +93,6 @@ export const Background = () => {
     }),
     [],
   );
-
- 
-
 
   if (!init) {
     return null;

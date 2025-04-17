@@ -1,13 +1,24 @@
 
 @media screen and (min-width: 700px) {
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+    }
     .watch {
-        border-radius: 30px;
-        border: 2px solid #ffffff;
-    padding: 20px 30px ;
+        border-radius: 20px;
+    padding: 20px 30px;
     font-size: 158px;
     margin-top: 50px;
-    color: #ffffff; /* Text color */
-    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff,
-     0 0 30px #ffffff, 0 0 40px #ffffff;
+   position: relative;
+   z-index: 2;
+        background: linear-gradient(84deg, #c800ff, #ff4400, #33ff33, #3352ff);
+        background-size: 200% 200%;
+        animation: gradient 4s ease infinite;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
+
+   
+
 }

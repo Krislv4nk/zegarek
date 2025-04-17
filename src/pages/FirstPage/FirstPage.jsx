@@ -51,8 +51,10 @@ const FirstPage = () => {
 
   return (
     <div className={css.wrapper}>
-      <CurrentDate/>
-      <CustomClock />
+      <div className={css.container}>
+        <CustomClock />
+        <CurrentDate/>
+        </div>
       <p className={css.created}>Created by Krislv4nk</p>
     </div>
   );
