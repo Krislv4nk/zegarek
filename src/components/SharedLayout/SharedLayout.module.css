@@ -1,22 +1,22 @@
-
-
 @media screen and (min-width: 700px) {
-    .wrapper {
+    .mainContainer {
         align-items: center;
     justify-content: center;
     flex-direction: column;
     display: flex;
     margin: auto;
+    margin-top: 50px;
     }
    
     .container {
         position: relative;
         border-radius: 20px;
-       
+        border: 2px solid #ffffff;
+        box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff;
     text-align: center;
         padding: 10px;
         font-size: 158px;
-        margin-top: 50px;
+        margin-top: 150px;
         
     }
 
@@ -31,10 +31,6 @@
          line-height: 1.5em;
     }
     .created {
-        background: linear-gradient(45deg, #c800ff, #ff4400, #ffff33,#33ff33, #3352ff, #051da2);
-        background-size: 200% 200%;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
         font-size: 24px;
         margin-bottom: 0px;
         margin-top: 150px;

@@ -1,9 +1,5 @@
 @media screen and (min-width: 700px) {
-    @keyframes gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-    }
+    
     .currentDate {
         font-size: 35px;
         border-radius: 30px;
@@ -11,11 +7,7 @@
         padding: 30px;
    position: relative;
    z-index: 2;
-        background: linear-gradient(84deg,  #ff4400, #ffff33, #33ff33, #3399ff);
-        background-size: 200% 200%;
-        /* animation: gradient 4s ease infinite; */
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        
 
     }
     

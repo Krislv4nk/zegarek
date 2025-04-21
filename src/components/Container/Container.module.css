@@ -1,8 +1,6 @@
 @media screen and (min-width: 700px) {
 .container {
-     /* background-image: url('./../../assets/images/leaves.jpg'); */
-  background-size: cover; 
-  background-position: center;
+    background-color: transparent;
 
     margin: 0 auto;
     width: 700px;
