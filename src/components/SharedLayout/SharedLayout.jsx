@@ -5,7 +5,7 @@ import { Container } from './../Container/Container';
 import CustomClock from './../../components/MyDigitalClock/MyDigitalClock';
 import CurrentDate from './../../components/CurrentDate/CurrentDate';
 import css from '../SharedLayout/SharedLayout.module.css';
-import { MyFog } from '../../components/Fog/Fog';
+import { Background} from '../../components/Background/Background';
 
 
 const SharedLayout = () => {
@@ -50,7 +50,7 @@ const SharedLayout = () => {
       };
     }, []);
   return (
-    <MyFog>
+    <Background>
     <Container>
       <Suspense fallback={null}>
         <div className={css.mainContainer}>
@@ -63,7 +63,7 @@ const SharedLayout = () => {
         <Outlet />
         </Suspense>
       </Container>
-      </MyFog>
+      </Background>
   );
 };
 
