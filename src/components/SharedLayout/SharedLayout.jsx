@@ -50,9 +50,10 @@ const SharedLayout = () => {
       };
     }, []);
   return (
-    <Background>
+    
     <Container>
       <Suspense fallback={null}>
+<Background>
         <div className={css.mainContainer}>
       <div className={css.container}>
         <CustomClock />
@@ -60,10 +61,11 @@ const SharedLayout = () => {
         </div>
       <p className={css.created}>Created by Krislv4nk</p>
           </div>
+</Background>
         <Outlet />
         </Suspense>
       </Container>
-      </Background>
+     
   );
 };
 
